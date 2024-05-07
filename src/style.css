@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap'); /* "Noto Sans" */
+
+@font-face {
+	font-family: 'Novecento';
+	src:
+		url('./asset/font/novecento_webfont.woff2') format('woff2'),
+		url('./asset/font/novecento_webfont.woff') format('woff');
+	font-style: normal;
+	font-weight: normal;
+}
+
+:root {
+	font-size: 16px;
+	font-family: 'Novecento';
+	color: #000;
+	scrollbar-width: thin;
+	scrollbar-color: #2d528f #1e1e24;
+
+	--bg-primary: #cad3d7;
+	--text-primary: #1b2539;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	/* background-color: #000; */
+	background-color: whitesmoke;
+}
+
+/* NAVIGATION STYLE */
+#navbar {
+	position: fixed;
+	width: 12rem;
+	height: 100vh;
+	background-color: var(--bg-primary);
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto 2rem;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.title > img {
+	margin: 1rem auto 0.5rem;
+}
+
+.nav-wrapper {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+}
+
+.nav-item {
+	width: 100%;
+}
+
+.nav-item:last-child {
+	margin-top: auto;
+}
+
+.nav-link {
+	color: var(--text-primary);
+	height: 3rem;
+	text-decoration: none;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+}
+
+.nav-link img {
+	width: 2rem;
+	min-width: 2rem;
+	margin: 0 1.5rem;
+}
+
+/* CONTENT STYLE */
+#content {
+	margin-left: 12rem;
+}
