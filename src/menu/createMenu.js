@@ -19,6 +19,7 @@ export default (menu) => {
 
 	// Creating the action button of each menu
 	const menuAction = document.createElement('div');
+	menuAction.classList.add('menu-action');
 	menuAction.innerHTML = `
         <button>Buy</button>
         <button>Wishlist</button>

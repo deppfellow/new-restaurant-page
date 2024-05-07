@@ -18,6 +18,7 @@
 
 	--bg-primary: #cad3d7;
 	--text-primary: #1b2539;
+	--text-primary-lighter: #2d528f;
 }
 
 * {
@@ -76,6 +77,11 @@ body {
 	align-items: center;
 }
 
+.nav-link:hover {
+	background-color: var(--text-primary-lighter);
+	color: var(--bg-primary);
+}
+
 .nav-link img {
 	width: 2rem;
 	min-width: 2rem;
@@ -85,4 +91,40 @@ body {
 /* CONTENT STYLE */
 #content {
 	margin-left: 12rem;
+}
+
+.menu-content {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+	gap: 2rem;
+}
+
+.menu-item {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	padding: 1rem;
+}
+
+.menu-wrapper {
+	display: flex;
+	justify-content: center;
+	flex-grow: 1;
+}
+
+.menu-description p:nth-child(2) {
+	font-weight: 600;
+}
+
+.menu-description p:nth-child(3) {
+	margin-top: 0.5rem;
+}
+
+.menu-action {
+	display: flex;
+	gap: 0.5rem;
+}
+
+.menu-action button {
+	flex-grow: 1;
 }
